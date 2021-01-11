@@ -3,17 +3,11 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import * as S from './styles';
 
-type MetaDataProps = {
-  title: string;
-  position: string;
-  description: string;
-}
-
 const Profile = () => {
   const {
     site: {
-      siteMetadata: { title, position, description },
-    },
+      siteMetadata: { title, position, description }
+    }
   } = useStaticQuery(graphql`
     query MySiteMetadata {
       site {
@@ -33,6 +27,6 @@ const Profile = () => {
       <p>{description}</p>
     </S.Wrapper>
   );
-}
+};
 
 export default Profile;
