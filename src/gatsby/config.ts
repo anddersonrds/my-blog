@@ -6,6 +6,7 @@ export default {
     description: `A blog about frontend development and other cool stuff`
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-eslint`,
     {
